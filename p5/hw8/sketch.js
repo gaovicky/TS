@@ -26,7 +26,6 @@ var colorList = [
   [79, 54, 17] //brown
 ];
 var img = [];
-var song;
 
 function preload() {
   //"All Too Well" by Taylor Swift
