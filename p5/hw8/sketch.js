@@ -44,7 +44,7 @@ function setup() {
   //params for RiTa.concordance() //removes "THE" (stop words)
   let params = {ignoreStopWords: true,
     ignorePunctuation: true,
-    ignoreCase: true // raven and Raven are the same
+    ignoreCase: true
   };
 
   count = RiTa.concordance(ATW.join(" "), params);
@@ -73,9 +73,9 @@ function draw() {
 
       //scale size of text using map()
       let x = count[i];
-      let scaleText = map(x, 0, 20, 8, 200); //smallest word is 5 largest is 200
+      let scaleText = map(x, 0, 20, 8, 200); //smallest word is 8 largest is 200
 
-      textSize(scaleText); //smallest the word can be is 5px
+      textSize(scaleText); //smallest the word can be is 8px
 
       // text i (current key), x pos, y pos
       text(i, random(width), random(0,730));
